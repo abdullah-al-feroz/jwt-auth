@@ -1,0 +1,14 @@
+Step 1: Step-by-step: How to find “API Keys” in the new SendGrid dashboard
+1.	Go to: https://app.sendgrid.com/ and log in to your account.
+2.	In the left sidebar menu, click: Settings → API Keys (not under “Email API → Integration Guide” anymore — it’s under “Settings”.) Dashboard → Settings → API Keys
+3.	Click the “Create API Key” button (top right corner).
+4.	Give it a name (for example: JwtAuthAppKey).
+5.	Choose access level:
+o	Full Access (if you’ll send emails and manage templates)
+o	or Restricted Access (for production security)
+6.	Click Create & View Key — it will show your new API Key.
+
+Step 2: Verify SendGrid API key permissions
+Go to your SendGrid dashboard → Settings → API Keys and make sure:
+1.	The API key has Full Access or at least “Mail Send” permission.
+2.	You are using the correct key in appsettings.json.
